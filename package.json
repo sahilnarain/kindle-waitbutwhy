@@ -1,0 +1,29 @@
+{
+  "name": "kindle-waitbutwhy",
+  "version": "1.0.0",
+  "description": "kindle waitbutwhy",
+  "main": "waitbutwhy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://sahilnarain@github.com/sahilnarain/kindle-waitbutwhy.git"
+  },
+  "keywords": [
+    "kindle",
+    "waitbutwhy"
+  ],
+  "author": "Sahil Narain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sahilnarain/kindle-waitbutwhy/issues"
+  },
+  "homepage": "https://github.com/sahilnarain/kindle-waitbutwhy#readme",
+  "dependencies": {
+    "async": "^1.5.2",
+    "epub-gen": "0.0.12",
+    "feed-read": "0.0.1",
+    "request": "^2.69.0"
+  }
+}
