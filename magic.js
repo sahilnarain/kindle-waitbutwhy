@@ -9,22 +9,22 @@ feed(url, function (err, rssFeed) {
   }
 
   var rss = rssFeed[0]; //Assume only 1 article is published in a day
-  /*var cutoff = new Date(new Date().setHours(0, 0, 0, 0));
+  var cutoff = new Date(new Date().setHours(0, 0, 0, 0));
   if (rss.published < cutoff) {
     return;
-  } else { */
-  var options = {
-    title: 'WBY - ' + rss.title,
-    author: 'Tim Urban',
-    publisher: 'Sahil/Kindle',
-    content: [{
-      title: rss.title,
-      data: rss.content
-    }]
-  };
-  console.log(options);
+  } else {
+    var options = {
+      title: 'WBY - ' + rss.title,
+      author: 'Tim Urban',
+      publisher: 'Sahil/Kindle',
+      content: [{
+        title: rss.title,
+        data: rss.content
+      }]
+    };
+    console.log(options);
 
-  new Epub(options, __dirname + '/' + rss.title + '.epub');
-  console.log('Done');
-  //}
+    new Epub(options, __dirname + '/' + rss.title + '.epub');
+    console.log('Done');
+  }
 });
